@@ -1,45 +1,46 @@
 html, body {
     margin: 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-}
 
+}
 header{
-    background: #000;
-    display: flex;
+    background: black;
+    display:flex;
     gap: 10px;
-    align-items: center;
+    align-items:center;
     height: 45px;
-    color: #ab3131;
+    color: #fff;
+
+
 }
 
-header div{
+header div {
     display: flex;
     gap: 10px;
     flex-direction: row;
     align-items: center;
     width: 1000px;
     margin: 0 auto;
-    height: 45px;
 }
 
 header h1{
     margin: 0;
     font-size: 20px;
-}
 
+}
 header img {
     width: 30px;
     height: 30px;
-    margin: 0 0 20px;
+   
 }
 header span{
     margin: 0 20px 0 auto;
 }
 
 #ex1 {
-    background:brown;
-    width: 400px;
-    height: 200px;
+    background-color: #863535;
+    width: 300px;
+    height: 100px;
     display: flex;
     gap: 10px;
     flex-direction: row;
@@ -48,54 +49,72 @@ header span{
 }
 
 .bloco {
-    background: #000;
-    width: 70px;
-    height: 70px;   
+    background: black;
+    width: 60px;
+    height: 60px;
+    
+    
+
 }
 
-.rightAUTO{
-    margin-right: auto;
-    
+.esquerda {
+    margin: 0 0 0 auto ;
+}
+
+#ex2 {
+    background-color: #863535;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.direita {
+    margin: 0 0 ;
 }
 
 #ex3 {
-    background-color: brown;
-    width: 400px;
-    height: 200px;
+    background-color: #863535;
+    width: 300px;
+    height: 100px;
     display: flex;
-    gap: 50px;
-    justify-content: space-around;
-    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.centro {
+    margin: 60px 60px ;
 }
 
 main {
     display: flex;
-    height: 1000px;
     width: 1000px;
-    margin: 0 auto;
-    gap: 20px;
+    margin:  0 auto;
+
 }
 
 #sidebar-right, #sidebar-left {
     width: 200px;
-    background: #CCC;
-    height: 1000px;
+    background: #ccc;
+    height: 500px;
 }
 
 #content {
-    width: 520px;
-    background: #f1f1f1;
+    width: 560px;
+    background: #000;
     height: 500px;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
 }
 
 footer{
-    background:brown;
+    background: #CCC;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
