@@ -7,44 +7,48 @@
   <body>
     
     <header>
-      <div>
-        <img src="img/coffee-svgrepo-com.svg" alt="Tech Coffee">
+      <div class="wrapper">
+        <a href="index.html" class="logotype">
+        <img src="img/cafe.svg" alt="Tech Coffee">
         <h1> Tech Coffee </h1>
-        <span>Menu</span>
+      </a>
+      <nav>
+        <ul>
+          <li> <a href="index.html" class="active"> Home</a></li>
+          <li> <a href="sobre.html"> Sobre </a></li>
+          <li> <a href="contato.html"> Contato</a></li>
+        </ul>
+      </nav>
       </div>
      </header>
-    <div id="ex1"> 
-      <div class="bloco"></div>
-      <div class="bloco esquerda"></div>
-      <div class="bloco"></div>
-     
-    </div>
-    
-    <div id="ex2"> 
-      <div class="bloco"></div>
-      <div class="bloco direita"></div>
-      <div class="bloco"></div>
-     
-    </div>
-    
-    <div id="ex3"> 
-      <div class="bloco centro"></div>
-      <div class="bloco centro"></div>
-      <div class="bloco centro"></div>
-      <div class="bloco centro"></div>
-     
-    </div>
-    
-    <main> 
-      <div id="sidebar-right">sidebar-right></div>
+
+     <main class="wrapper">
+      <div id="sidebar-right"></div>
       <div id="content">
-        <h1> </h1>
+        <h1> Home </h1>
+        <h2> Atividade Flex </h2>
+        <div id="ex1"> 
+        <div class="bloco"></div>
+        <div class="bloco esquerda"></div>
+        <div class="bloco"></div>
       </div>
-      <div id="sidebar-right">sidebar-left</div>
-     
-    </main>
+      <h3>Lista - Não Ordenada</h3>
+      <ul>
+        <li> Item 1</li>
+        <li> Item 2</li>
+        <li> Item 3</li>
+      </ul>
+      <h3> Lista - Ordenada</h3>
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+    </div>
+      <div id="sidebar-right"></div>
+  </main>
     
-    <footer>
+  <footer>
       <span> Bruna Kempinsk @ 2023</span>
     </footer>
 </body>
