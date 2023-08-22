@@ -1,44 +1,60 @@
 html, body {
     margin: 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-
 }
+
+a {
+    text-decoration: none;
+}
+
 header{
-    background: black;
-    display:flex;
-    gap: 10px;
-    align-items:center;
-    height: 45px;
+    background: #000;
     color: #fff;
-
-
 }
 
-header div {
+header div{
     display: flex;
-    gap: 10px;
     flex-direction: row;
     align-items: center;
-    width: 1000px;
-    margin: 0 auto;
+    height: 45px;
+}
+
+header a.logotype{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
 }
 
 header h1{
     margin: 0;
     font-size: 20px;
-
 }
+
 header img {
     width: 30px;
     height: 30px;
-   
 }
-header span{
-    margin: 0 20px 0 auto;
+
+header nav{
+    margin: 0 0 0 auto;
+}
+
+header nav ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    gap: 20px;
+}
+
+header nav ul li a{
+    color: #fff;
+    padding: 0 0 8px 0;
 }
 
 #ex1 {
-    background-color: #863535;
+    background: #CCC;
     width: 300px;
     height: 100px;
     display: flex;
@@ -49,66 +65,41 @@ header span{
 }
 
 .bloco {
-    background: black;
+    background: #000;
     width: 60px;
-    height: 60px;
-    
-    
-
+    height: 60px;   
 }
 
-.esquerda {
-    margin: 0 0 0 auto ;
+.esquerda{
+    margin-right: auto;
 }
 
-#ex2 {
-    background-color: #863535;
-    width: 300px;
-    height: 100px;
-    display: flex;
-    gap: 10px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.direita {
-    margin: 0 0 ;
-}
-
-#ex3 {
-    background-color: #863535;
-    width: 300px;
-    height: 100px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.centro {
-    margin: 60px 60px ;
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 main {
     display: flex;
-    width: 1000px;
-    margin:  0 auto;
-
+    gap: 20px;
 }
+
+main.wrapper{
+    margin: 20px auto;
+}
+
 
 #sidebar-right, #sidebar-left {
     width: 200px;
-    background: #ccc;
+    background: #CCC;
     height: 500px;
 }
 
 #content {
-    width: 560px;
-    background: #000;
+    width: 520px;
+    background: #f1f1f1;
     height: 500px;
+    padding: 20px;
 }
 
 footer{
@@ -117,4 +108,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.active{
+    border-bottom: 4px solid #da3c07;
 }
