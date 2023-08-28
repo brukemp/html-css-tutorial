@@ -12,31 +12,32 @@ header{
     color: #fff;
 }
 
-header div{
+header div {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 45px;
 }
+  
 
 header a.logotype{
-    display: flex;
-    align-items: center;
-    color: #fff;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 10px;
 }
 
-header h1{
+header h1 {
     margin: 0;
     font-size: 20px;
 }
-
+    
 header img {
     width: 30px;
     height: 30px;
-}
+   }
 
-header nav{
+header nav {
     margin: 0 0 0 auto;
 }
 
@@ -49,12 +50,35 @@ header nav ul{
 }
 
 header nav ul li a{
-    color: #fff;
-    padding: 0 0 8px 0;
+   color: #fff;
+   padding: 0 0 8px 0;
+
 }
 
+header nav ul li{
+    position: relative;
+
+}
+
+header nav ul li a::after{
+    position: absolute;
+    background-color: #da3c07;
+    height: 4px;
+    width: 100%;
+    content: '';
+    left: 0;
+    bottom: -12px;
+    transform: scaleX(0);
+}
+
+header nav ul li a:hover::after {
+    transform: scaleX(1);
+    transition: 0.8s;
+}
+
+
 #ex1 {
-    background: #CCC;
+    background-color: #CCC;
     width: 300px;
     height: 100px;
     display: flex;
@@ -65,13 +89,13 @@ header nav ul li a{
 }
 
 .bloco {
-    background: #000;
+    background: black;
     width: 60px;
-    height: 60px;   
+    height: 60px;
 }
 
-.esquerda{
-    margin-right: auto;
+.esquerda {
+    margin-right: auto ;
 }
 
 .wrapper {
@@ -84,10 +108,9 @@ main {
     gap: 20px;
 }
 
-main.wrapper{
+main.wrapper {
     margin: 20px auto;
-}
-
+} 
 
 #sidebar-right, #sidebar-left {
     width: 200px;
