@@ -29,7 +29,7 @@ header a.logotype{
 
 header h1 {
     margin: 0;
-    font-size: 20px;
+    font-size: 15px;
 }
     
 header img {
@@ -69,6 +69,7 @@ header nav ul li a::after{
     left: 0;
     bottom: -12px;
     transform: scaleX(0);
+    
 }
 
 header nav ul li a:hover::after {
@@ -114,15 +115,20 @@ main.wrapper {
 
 #sidebar-right, #sidebar-left {
     width: 200px;
-    background: #CCC;
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #content {
     width: 520px;
-    background: #f1f1f1;
     height: 500px;
     padding: 20px;
+}
+
+#content h1 {
+    margin: 0 0 20px 0;
 }
 
 footer{
@@ -135,4 +141,49 @@ footer{
 
 .active{
     border-bottom: 4px solid #da3c07;
+}
+
+.card {
+
+    border: 1px solid #CCC;
+    border-radius: 15px;
+    margin: 0 0 20px 0;
+}
+
+.card img {
+   border-radius: 15px 15px 0 0;
+}
+
+.card div {
+    padding: 20px;
+}
+
+.card div h3 {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+}
+
+.card div p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.card.horizontal {
+    display: flex;
+}
+
+.card.horizontal img {
+    border-radius: 15px 0 0 15px;
+}
+
+table, th, td {
+    border: 1px solid #CCC;
+}
+
+th, td {
+    padding: 5px 10px;
+}
+
+table {
+    border-collapse: collapse  ;
 }
