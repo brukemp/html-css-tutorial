@@ -29,7 +29,7 @@ header a.logotype{
 
 header h1 {
     margin: 0;
-    font-size: 15px;
+    font-size: 20px;
 }
     
 header img {
@@ -187,3 +187,6 @@ th, td {
 table {
     border-collapse: collapse  ;
 }
+
+
+
